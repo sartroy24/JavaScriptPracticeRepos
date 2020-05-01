@@ -12,6 +12,13 @@
                para[3].style.fontStyle = "Italic";
                para[4].style.color = "blue";
            }
+        function setNewImage(){
+            document.getElementById("imgID").src = "Images/messi.jpg";
+        }
+        function setOldImage(){
+            document.getElementById("imgID").src = "Images/ronaldo.jpg";
+        }
+
         </script>
     </head>
     <body>
@@ -24,7 +31,9 @@
         <br>
         <br>
         <button onclick="changeStyling()"> Click here</button>
-
+        <br>
+        <br>
+        <img id="imgID" onmouseover="setNewImage()" onmouseout="setOldImage()"  src="Images/ronaldo.jpg" width="350">
     </body>
 
 </html>
