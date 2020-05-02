@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+           Email Validation
+        </title>
+        <script type="text/javascript">
+            function Validate(){
+            var email = document.getElementById("emailValue").value;
+            var regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})(.[a-z]{2,10})?$/;
+            if(regx.test(email)){
+                alert("Valid Input");
+            }
+            else{
+                alert("Invalid Input");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="emailValue" placeholder="Email ID"/>
+        <label id="lblValue" style="color: red; visibility:hidden;">Invalid Value</label><br>
+        <button type="button" onclick="Validate()">Click here!</button>
+    </body>
+
+</html>
