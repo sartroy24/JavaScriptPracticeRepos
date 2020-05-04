@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+           Mobile Number Validation
+        </title>
+        <script type="text/javascript">
+            function validate(){
+                var num = document.getElementById("mob").value;
+                var regx = /^[6-9]\d{9}$/;
+                if(regx.test(num)){
+                    alert("Valid Entry");
+                }
+                else{
+                    alert("Invalid Entry");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form  action="message.html">
+            <input id="mob" placeholder="Mobile Number" type="text"/><br>
+            <label id="showLabel" style="color:red; visibility:hidden;">Invalid Entry</label>
+            <br><br>
+          <!-- <input id="pass" placeholder="password" type="password"/><br><br> -->
+    
+            <button type="button" onclick="validate()">Submit</button>
+        </form>
+    </body>
+
+</html>

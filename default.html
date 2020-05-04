@@ -3,10 +3,30 @@
         <title>
             My title
         </title>
-        <script src="demo.js" type="text/javascript">
+        <script type="text/javascript">
+            function fn1(){
+                var select = document.getElementById("selections");
+                alert(select.options[select.selectedIndex].value);
+            }
         </script>
     </head>
     <body>
+        <!-- <input id="text1" placeholder="username">
+        <br>
+        <input type="password" id="text2" placeholder="password">
+        <br> -->
+        <!-- <input type="radio" id="rd1" name="grp1" value="Simple Snippets">Simple Snippets</input><br><br>
+        <input type="radio" id="rd2" name="grp1" value="Telusko Learnings">Telusko Learnings</input><br><br>
+        <button onclick="GetValue()">Click Me!</button> -->
+
+        <select id="selections">
+            <option value="Sarthak">Sarthak</option>
+            <option value="Roy">Roy</option>
+            <option value="Salesforce">Salesforce</option>
+        </select>
+        <br>
+        <br>
+        <button onclick="fn1()"> Click here</button>
 
     </body>
 
